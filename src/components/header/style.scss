@@ -1,0 +1,125 @@
+.header{
+    max-width: 1724px;
+    margin: 0 auto;
+    
+    position: relative;
+
+    
+    .headContents{
+        border-bottom: 1px solid #FFFFFF;
+        padding: 12px 0;
+        margin:0 auto ;
+        
+
+        .buttoncha{
+            background-color: #0E0E12;
+            color: white;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+
+        }
+
+        .topBG{
+            position: absolute;
+            top: 0;
+            z-index: -1000;
+            left: -143px;
+        }
+
+        .finger{
+            position: absolute;
+            right: 5%;
+            top: 180%;
+            z-index: -10;
+        }
+
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100000;
+
+            .nav__list{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 40%;
+                list-style-type: none;
+
+                .nav__item{
+                    padding-bottom: 5px;
+                    position: relative;
+                    transition: all 0.3s;
+
+                    &::before{
+                        content: "";
+                        width: 0;
+                        height: 2px;
+                        position: absolute;
+                        left: 50%;
+                        bottom: 0;  
+                        background-color: #D31B1B;
+                        transition: all 0.3s;
+                    }
+
+                    &:hover{
+                        &::before{
+                                content: "";
+                                    width: 100%;
+                                    height: 2px;
+                                    position: absolute;
+                                    left: 0;
+                                    bottom: 0;
+                                    background-color: #D31B1B;
+                        }
+                    }
+                    .nav__link{
+                        font-family: 'Allerta Stencil';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: px;
+                            line-height: 26px;
+                            color: #FFFFFF;
+                            text-decoration: none;
+                    }
+                }
+            }
+
+            .LangHeader{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                            .setLang{
+                                margin-left: 2px;
+                                transition: all 0.3s;
+                                background-color: transparent;
+                                border: none;
+                                font-family: 'Gotham Pro';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 18px;
+                                    line-height: 17px;
+                                
+                                    color: #FFFFFF;
+                
+                                &:focus{
+                                    outline: none;
+                                }
+                
+                                option{
+                                    font-family: 'Gotham Pro';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 18px;
+                                        line-height: 17px;
+                                    
+                                        color: #000;
+                                }
+                            }
+
+            }
+        }
+    }
+}

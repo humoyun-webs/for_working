@@ -1,0 +1,150 @@
+.hero {
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+
+    .conteiner {}
+
+    .texts {
+        margin-top: 150px;
+        text-align: center;
+
+        .line1 {
+            position: relative;
+            bottom: 310px;
+            left: 150px;
+            width: 120px;
+        }
+
+        .line2 {
+            position: relative;
+            right: 420px;
+            bottom: 210px;
+            height: 120px;
+        }
+
+        .light {}
+
+        h1 {
+            font-family: 'Laviossa RUS';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 60px;
+            line-height: 117.2%;
+            /* or 70px */
+
+            text-align: center;
+
+            background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+
+        }
+
+        h6 {
+
+            z-index: 100;
+            font-family: 'Laviossa RUS';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 158.7%;
+            /* or 41px */
+
+            text-align: center;
+
+            color: #EAE9E9;
+        }
+
+        .btns {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+            button:nth-child(1) {
+                color: white;
+                width: 200px;
+                height: 60px;
+                border: none;
+                background: linear-gradient(87.05deg, #FF003F 17.99%, #FF3766 33.07%, #E12653 75.67%, #FF3766 93.02%);
+                box-shadow: 0px 3px 49px -3px rgba(226, 72, 72, 0.76), inset 0px -4px 0px #8F1919;
+                border-radius: 15px;
+                cursor: pointer;
+
+                font-family: 'Laviossa RUS';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 158.7%;
+                /* identical to box height, or 35px */
+
+                text-align: center;
+
+                color: #FFFFFF;
+                transition: 0.2s ease;
+
+
+                &:hover {
+                    border: 3px solid #CE3333;
+                    background: none;
+
+                    border-radius: 15px;
+                    cursor: pointer;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 158.7%;
+                    /* identical to box height, or 35px */
+
+                    text-align: center;
+
+                    color: #FFFFFF;
+                    box-shadow: none;
+
+                }
+            }
+
+            button:nth-child(2) {
+                color: white;
+                width: 200px;
+                height: 60px;
+                border: 3px solid #CE3333;
+                background: none;
+
+                border-radius: 15px;
+                cursor: pointer;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 158.7%;
+                /* identical to box height, or 35px */
+
+                text-align: center;
+
+                color: #FFFFFF;
+                transition: 0.2s ease;
+
+                &:hover {
+                    border: none;
+                    background: linear-gradient(87.05deg, #FF003F 17.99%, #FF3766 33.07%, #E12653 75.67%, #FF3766 93.02%);
+                    box-shadow: 0px 3px 49px -3px rgba(226, 72, 72, 0.76), inset 0px -4px 0px #8F1919;
+                    border-radius: 15px;
+                    cursor: pointer;
+
+                    font-family: 'Laviossa RUS';
+                    font-style: normal;
+                    font-weight: 500;
+
+                    line-height: 158.7%;
+                    border: 3px solid #CE3333;
+
+                    text-align: center;
+
+                    color: #FFFFFF;
+                    
+                }
+            }
+        }
+    }
+}

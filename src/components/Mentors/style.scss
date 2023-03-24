@@ -1,0 +1,112 @@
+.mentors{
+    margin-bottom: 100px;
+    .mentors-list{
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        margin-bottom: 100px;
+
+        .mentor{
+            width: 310px;
+            height: 400px;
+            margin-right: 30px;
+            border-radius: 22px;
+            padding-bottom: 30px;
+            font-family: 'Laviossa RUS';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 117.2%;
+            color: #FFFFFF;
+            cursor: pointer;
+            transition: all 0.3s;
+            height: 100%;
+            position: relative;
+            
+            img{
+                width: 100%;
+                transition: all 0.3s;
+                position: relative;
+            }
+
+            span{
+                display: block;
+                bottom: 20%;
+                position: absolute;
+                transition: all 0.3s;
+                text-align: center; 
+                width: 100%;
+            }
+
+            &:hover{
+       
+                color: #F1023D;
+                height: 100%;
+
+                img{
+                    transform: translateY(-100px)
+                }
+
+                span{
+                    transform: translateY(-100px)
+                }
+            }
+
+
+        }
+    }
+
+    
+            .StatCardsWrapper {
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(3, 288px);
+                justify-content: center;
+                gap: 24px;
+    
+                .StatCard {
+                    border-radius: 8px;
+                    padding: 20px 25px;
+                    cursor: pointer;
+                    transition: box-shadow 0.2s ease-in;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+    
+    
+                    .StatNumber {
+                        font-family: 'Allerta Stencil';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 58px;
+                        line-height: 117.2%;
+                        background: linear-gradient(90deg, #F4013D 2.52%, #DA0E3C 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        text-fill-color: transparent;
+                        margin: auto;
+    
+                        .animatedDiv {
+                            display: inline-block;
+                            margin: auto;
+                        }
+                    }
+    
+                    .StatType {
+                    font-family: 'Laviossa RUS';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 22px;
+                        line-height: 117.2%;
+                        text-align: center;
+                        background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        text-fill-color: transparent;
+                    }
+                }
+            }
+
+}

@@ -1,0 +1,71 @@
+.about {
+    width: 100%;
+    position: relative;
+    margin-top: 200px;
+    margin-bottom: 100px;
+
+    .light {
+        position: absolute;
+        display: inline-block;
+        bottom: -200px;
+        width: 800px;
+        z-index: -100;
+    }
+
+    .about_inline {   
+        display: flex;
+        justify-content: center;
+
+        .imgs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            margin-right: 50px;
+
+            // .txt {
+            //     margin-left: 300px;
+            // }
+
+            .man {
+                margin-left: 0px
+            }
+        }
+
+
+        .text {
+            width: 600px;
+            position: relative;
+            margin-right: 50px;
+
+            top: 0px;
+
+            h1 {
+                font-family: 'Laviossa RUS';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 117.2%;
+                /* or 70px */
+
+
+                color: #FFFFFF;
+
+            }
+
+            h5 {
+                font-family: 'Laviossa RUS';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 30px;
+                line-height: 170%;
+                /* or 51px */
+
+
+                color: #EAE9E9;
+            }
+        }
+
+    }
+}

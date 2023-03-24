@@ -1,0 +1,72 @@
+.Certications {
+    margin-bottom: 100px;
+
+    .certificateHeading{
+        font-family: 'Laviossa RUS';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 60px;
+            line-height: 117.2%;
+            color: #FFFFFF;
+            margin-bottom: 30px;
+    }
+
+    .Certications-list {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        margin-bottom: 100px;
+
+        .Certication {
+            width: 310px;
+            height: 400px;
+            margin-right: 30px;
+            border-radius: 22px;
+            padding-bottom: 30px;
+            font-family: 'Laviossa RUS';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 117.2%;
+            color: #FFFFFF;
+            cursor: pointer;
+            transition: all 0.3s;
+            height: 100%;
+            position: relative;
+
+            img {
+                width: 100%;
+                transition: all 0.3s;
+                position: relative;
+            }
+
+            span {
+                display: block;
+                bottom: 20%;
+                position: absolute;
+                transition: all 0.3s;
+                text-align: center;
+                width: 100%;
+            }
+
+            &:hover {
+
+                color: #F1023D;
+                height: 100%;
+
+                img {
+                    transform: translateY(-100px)
+                }
+
+                span {
+                    transform: translateY(-100px)
+                }
+            }
+
+
+        }
+    }
+
+}

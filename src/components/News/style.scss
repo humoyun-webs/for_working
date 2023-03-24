@@ -1,0 +1,40 @@
+.news{
+    .news-heading{
+        font-family: 'Laviossa RUS';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 60px;
+            line-height: 117.2%;
+            color: #FFFFFF;
+            margin-bottom: 30px;
+    }
+
+    .newsWrapper{
+        display: flex;
+        align-items: flex-start;
+
+
+        .images{
+            margin-right: 220px;
+            position: relative;
+            
+
+            .newsS{
+                position: relative;
+                top: -150px;
+                left: 150px;
+            }
+
+        }
+
+        .news-desc{
+            font-family: 'Laviossa RUS';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 30px;
+                line-height: 170%;
+                color: #EAE9E9;
+        }
+
+    }
+}

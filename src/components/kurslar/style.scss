@@ -1,0 +1,109 @@
+.kurslar{
+    max-width: 1724px;
+    margin:  100px auto;
+
+    .container{
+        margin:  0 auto;
+        color: white;
+        .sar1{
+            font-family: 'Laviossa RUS';
+font-style: normal;
+font-weight: 500;
+font-size: 60px;
+line-height: 117.2%;
+/* or 70px */
+
+
+color: #FFFFFF;
+
+        }
+        .cardss{
+            display: flex;
+            justify-content: space-between;
+
+            .card{
+                max-width: 400px;
+                padding: 20px;
+                border: 2px solid red;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border-radius: 15px;
+              gap: 20px;
+              transition: all 0.3s ease;
+              cursor: pointer;
+             
+              &:hover{
+                .cardimg{
+                    transform: scale(1.1);
+                
+                }
+              }
+              .cardimg{
+                width: 100%;
+                transition: 0.3s ease;
+              }
+             
+              .texts{
+                p{
+                    font-family: 'Laviossa RUS';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 117.2%;
+                /* or 18px */
+                
+                
+                background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+                -webkit-background-clip: text;
+                margin: 20px 0;
+                background-clip: text;
+                }
+                .kor{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background-color: red;
+                    position: absolute;
+                    right: 30px;
+                    bottom: 10px;
+                    img{
+                        position: relative;
+                        right: 30px;
+                        top: 6px;
+
+                    }
+                }
+                
+.lorems{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+  
+        font-family: 'Laviossa RUS';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 117.2%;
+/* or 26px */
+
+
+background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+
+   
+
+
+
+}
+              }
+                
+            }
+        }
+    }
+}

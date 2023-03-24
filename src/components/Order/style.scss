@@ -1,0 +1,54 @@
+.order{
+    margin-bottom: 154px;
+
+    .order-heading{
+        font-family: 'Allerta Stencil';
+            font-weight: 400;
+            font-size: 60px;
+            line-height: 117.2%;
+            color: #FFFFFF;
+            margin-bottom: 30px;
+    }
+    .order-inputs_wrapper{
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        .order-inputs{
+            width: 320px;
+            background: #202020;
+            border: 4px solid rgba(255, 255, 255, 0.29);
+            border-radius: 20px;
+            padding: 20px 0 20px 20px;
+            margin-right: 20px;
+            color: #FFFFFF;
+        }
+
+         input::-webkit-outer-spin-button,
+         input::-webkit-inner-spin-button {
+             -webkit-appearance: none;
+             margin: 0;
+         }
+    
+         input[type="number"] {
+             -moz-appearance: textfield;
+         }
+
+        .order-btn{
+            background: linear-gradient(87.05deg, #F4013D 17.99%, #F0073E 43%, #F1013B 68.01%, #D90E3C 93.02%);
+            box-shadow: 0px 3px 49px -3px rgba(226, 72, 72, 0.76), inset 0px -4px 0px #8F1919;
+            border-radius: 20px;
+            font-family: 'Allerta Stencil';
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 117.2%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #FFFFFF;
+                padding: 20px 0;
+                width: 300px;
+                cursor: pointer;
+        }
+    }
+}
