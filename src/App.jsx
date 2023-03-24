@@ -8,7 +8,7 @@ import Footer from "./components/Footer/Index"
 import Order from "./components/Order/Index"
 import Mentors from "./components/Mentors/Index"
 import News from "./components/News/Index"
-import Certifiates from "./components/Certificates"
+import Certifiates from "./components/Certificates/Index"
 
 function App() {
 
