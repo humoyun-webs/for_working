@@ -6,9 +6,16 @@ import card3 from "../../assets/card3.svg";
 import kor from "../../assets/kor.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-const index = () => {
+import content from "../../localization/context"
+const index = ({setlang,Lang}) => {
+
+  const langs = content[Lang]
+  const {courses} = langs
+  console.log(courses);
+
   useEffect(() => {
     AOS.init();
+    
   });
   return (
     <div className="kurslar">
@@ -20,15 +27,14 @@ const index = () => {
             <div className="texts">
               <div className="lorems">
                 <h3>
-                  Lorem ipsum dolor <br /> sit amet.
+                  {courses.tx1}
                 </h3>
                 <h4>
-                  20 <br /> marta
+                  {courses.tx2}
                 </h4>
               </div>
               <p>
-                Lorem ipsum dolor sit amet consectetur. Amet donec rutrum
-                habitasse eu interdum dignissim arcu.{" "}
+               {courses.tx3}
               </p>
               <div className="kor">
                 <img src={kor} alt="" />
@@ -39,16 +45,15 @@ const index = () => {
             <img src={card2} alt="card1img" className="cardimg" />
             <div className="texts">
               <div className="lorems">
-                <h3>
-                  Lorem ipsum dolor <br /> sit amet.
+              <h3>
+                  {courses.tx1}
                 </h3>
                 <h4>
-                  20 <br /> marta
+                  {courses.tx2}
                 </h4>
               </div>
               <p>
-                Lorem ipsum dolor sit amet consectetur. Amet donec rutrum
-                habitasse eu interdum dignissim arcu.{" "}
+               {courses.tx3}
               </p>
               <div className="kor">
                 <img src={kor} alt="" />
@@ -59,16 +64,15 @@ const index = () => {
             <img src={card3} alt="card1img" className="cardimg" />
             <div className="texts">
               <div className="lorems">
-                <h3>
-                  Lorem ipsum dolor <br /> sit amet.
+              <h3>
+                  {courses.tx1}
                 </h3>
                 <h4>
-                  20 <br /> marta
+                  {courses.tx2}
                 </h4>
               </div>
               <p>
-                Lorem ipsum dolor sit amet consectetur. Amet donec rutrum
-                habitasse eu interdum dignissim arcu.{" "}
+               {courses.tx3}
               </p>
               <div className="kor">
                 <img src={kor} alt="" />

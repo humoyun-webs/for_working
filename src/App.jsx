@@ -1,4 +1,4 @@
-import React  from 'react'
+import React, {useState}  from 'react'
 import Header from "./components/header/Index"
 import Hero from "./components/hero/index"
 import About from "./components/about/index"
@@ -11,19 +11,19 @@ import News from "./components/News/Index"
 import Certifiates from "./components/Certificates/Index"
 
 function App() {
-
+  const [language, setlanguage] = useState("ru")
   return (
     <div className="App">
-      <Header/>
-      <Hero/>
-      <About/>
-      <Cards/>
-      <Courses/>
-      <Mentors/>
-      <News/>
-      <Certifiates/>
-      <Order/>
-      <Footer/>
+      <Header setlang={setlanguage} Lang ={language}/>
+      <Hero setlang={setlanguage} Lang ={language}/>
+      <About setlang={setlanguage} Lang ={language}/>
+      <Cards setlang={setlanguage} Lang ={language}/>
+      <Courses setlang={setlanguage} Lang ={language}/>
+      <Mentors setlang={setlanguage} Lang ={language}/>
+      <News setlang={setlanguage} Lang ={language}/>
+      <Certifiates setlang={setlanguage} Lang ={language}/>
+      <Order setlang={setlanguage} Lang ={language}/>
+      <Footer setlang={setlanguage} Lang ={language}/>
     </div>
   )
 }

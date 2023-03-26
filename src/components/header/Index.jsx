@@ -6,10 +6,14 @@ import Palts from "../../assets/heropalts.svg"
 import RU from "../../assets/ru.png"
 import UZ from "../../assets/uz.png"
 import "./style.scss"
+import content from "../../localization/context"
 
-function Index() {
+function Index({setlang, Lang}) {
 
-  const [lang, setLang] = useState("ru")
+  const langs = content[Lang]
+  const {navbar}  = langs
+  
+  
 
 
   return (
@@ -28,33 +32,33 @@ function Index() {
           </NavLink>
           <ul className="nav__list">
             <li className="nav__item">
-              <NavLink className="nav__link">О НАС</NavLink>
+              <NavLink className="nav__link">{navbar.AboutUS}</NavLink>
             </li>
             <li className="nav__item">
-              <NavLink className="nav__link">КУРСЫ</NavLink>
+              <NavLink className="nav__link">{navbar.Courses}</NavLink>
             </li>
             <li className="nav__item">
-              <NavLink className="nav__link">НОВОСТИ</NavLink>
+              <NavLink className="nav__link">{navbar.news}</NavLink>
             </li>
             <li className="nav__item">
-              <NavLink className="nav__link">НАСТАВНИКИ</NavLink>
+              <NavLink className="nav__link">{navbar.mentors}</NavLink>
             </li>
           </ul>
 
           <div className="LangHeader">
-            <img src={lang === "ru" ? RU : UZ} width="18" height="18" alt="" />
+            <img src={Lang === "ru" ? RU : UZ} width="18" height="18" alt="" />
             <select
-              name="lang"
-              id="lang"
+              name="Lang"
+              id="Lang"
               className="setLang"
-              onChange={(e) => setLang(e.target.value)}
+              onChange={(e) => setlang(e.target.value)}
             >
               <option value="ru">RU</option>
               <option value="uz">UZ</option>
             </select>
           </div>
 
-          <button className='buttoncha'>КОНТАКТЫ</button>
+          <button className='buttoncha'>{navbar.contacts}</button>
         </nav>
         <img
           src={Palts}

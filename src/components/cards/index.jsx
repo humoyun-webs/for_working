@@ -6,11 +6,14 @@ import user from "../../assets/users.svg";
 import student from "../../assets/graduation-cap.svg";
 import ellipse from "../../assets/Ellipse.svg";
 import png from "../../assets//pngwing2.svg";
+import content  from "../../localization/context";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-const index = () => {
-
+const index = ({setlang,Lang}) => {
+  const langs = content[Lang]
+const {Cards} = langs;
+console.log(Lang);
     useEffect(()=>{
         AOS.init()
     })
@@ -24,7 +27,7 @@ const index = () => {
             <img src={mikro} alt="mikropng" />
           </div>
           <h5>
-            Lorem ipsum dolor <br /> sit amet.
+            {Cards.fCard}
           </h5>
         </div>
         <div className="card">
@@ -32,8 +35,7 @@ const index = () => {
             <img src={user} alt="mikropng" />
           </div>
           <h5>
-            Lorem ipsum dolor
-            <br /> sit amet.
+            {Cards.sCard}
           </h5>
         </div>
         <div className="card">
@@ -41,8 +43,7 @@ const index = () => {
             <img src={wallet} alt="mikropng" />
           </div>
           <h5>
-            Lorem ipsum dolor <br />
-            sit amet.
+            {Cards.tCard}
           </h5>
         </div>
         <div className="card">
@@ -50,8 +51,7 @@ const index = () => {
             <img src={student} alt="mikropng" />
           </div>
           <h5>
-            Lorem ipsum dolor
-            <br /> sit amet.
+            {Cards.foCard}
           </h5>
         </div>
       </div>

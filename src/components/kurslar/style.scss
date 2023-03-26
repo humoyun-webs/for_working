@@ -47,6 +47,7 @@ color: #FFFFFF;
               }
              
               .texts{
+                width: 90%;
                 p{
                     font-family: 'Laviossa RUS';
                 font-style: normal;
@@ -54,7 +55,7 @@ color: #FFFFFF;
                 font-size: 15px;
                 line-height: 117.2%;
                 /* or 18px */
-                
+                width: 80%;
                 
                 background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
                 -webkit-background-clip: text;
